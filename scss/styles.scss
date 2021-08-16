@@ -127,7 +127,7 @@ body {
 }
 
 $tab: 1024px;
-@media screen and (min-width: $tab) {
+@media screen and (max-width: $tab) {
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -151,7 +151,7 @@ $tab: 1024px;
 	.inner-wrapper {
 		width: 75%;
 	}
-	
+
 	.form-group {
 		input {
 			width: 96%;
