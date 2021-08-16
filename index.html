@@ -1,10 +1,72 @@
+<!-- Method: Superstar -->
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>test</title>
+	<meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+	<title>DRONIFY Login</title>
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<p>testing paragraph</p>
+	<div class="container">
+		<div class="section section-one">
+			<div class="inner-wrapper login-section" id="login-wrapper" style="display: block;">
+				<div class="image-wrapper">
+					<img src="images/dronify.png">			
+				</div>
+				<div class="content-wrapper">
+					<p>Login to track your delivery</p>		
+				</div>	
+				<div class="form-wrapper">
+					<form class="form login" action="/action.php" method="post">
+					    <div class="form-group">
+					      	<input type="text" placeholder="Username" name="username" required>
+					      	<input type="password" placeholder="Password" name="password" required>   
+					      	<button type="submit">Login</button>
+					    </div>
+				  	</form>
+		  		</div>
+		  		<div class="content-wrapper">
+		  			<p>Don’t have an account? <a onclick="hideShow()" href="">Register now</a></p>
+		  		</div>
+	  		</div>
+	  		<div class="inner-wrapper register-section" id="register-wrapper" style="display: none;">
+				<div class="image-wrapper">
+					<img src="images/dronify.png">			
+				</div>
+				<div class="content-wrapper">
+					<p>Create an account to track status of your delivery</p>		
+				</div>	
+				<div class="form-wrapper">
+					<form class="form register" action="/action.php" method="post">
+					    <div class="form-group">
+						    <input type="text" placeholder="Email" name="email" id="email" required>
+						    <input type="password" placeholder="Password" name="psw" id="psw" required>
+						    <input type="tel" placeholder="Mobile Number" id="mobile" name="mobile" required>
+					      	<button type="submit">Create Account</button>
+					    </div>
+				  	</form>
+		  		</div>
+		  		<div class="content-wrapper">
+		  			<p>Already have an account? <a onclick="hideShow()" href="">Login from here</a></p>
+		  		</div>
+	  		</div>
+		</div>
+		<div class="section section-two">
+			<div class="inner-wrapper">
+				<div class="content-wrapper">
+					<p>Delivery simplified<br/><span>dronify</span></p>		
+				</div>		
+				<div class="image-wrapper">
+					<img src="images/dronify-colored.png">
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

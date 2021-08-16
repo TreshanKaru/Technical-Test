@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: #B7B6B6;
+    font-size: 15px;
+}
+
+.container:after {
+    background: url("../images/buildings-background.svg");
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 210px;
+}
+
+.section {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.section.section-two {
+    background: transparent linear-gradient(181deg, #79c3f9 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.inner-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="tel" i],
+.form-group button {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.image-wrapper img {
+    width: 130px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="tel" i] {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 378px;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+}
+
+.form-group button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+    background: #4e82dd;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+.content-wrapper p a {
+    color: #4e82dd;
+    text-decoration: none;
+}
+
+.section.section-two p {
+    color: #fff;
+    text-align: center;
+}
+
+.section.section-two p span {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 18px;
+}
+
+.section.section-two .content-wrapper {
+    max-width: 146px;
+    margin: auto;
+}
+
+.section.section-two .image-wrapper {
+    text-align: center;
+    margin: 40px;
+}
+
+.section.section-two .image-wrapper img {
+    width: 180px;
+}
+
+.section.section-two:after {
+    background: url(../images/clouds.svg) no-repeat;
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 75%;
+    height: 295px;
+}
+
+.inner-wrapper.form-register .form-group button {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.inner-wrapper.register-section {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section.section-one {
+        order: 2;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section.section-two {
+        max-height: 400px;
+    }
+
+    .inner-wrapper {
+        width: 75%;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="tel" i] {
+        width: 96%;
+    }
+
+    .container:after {
+        z-index: -1;
+    }
+}
