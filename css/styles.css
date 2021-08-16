@@ -33,53 +33,6 @@ body {
     background: transparent linear-gradient(181deg, #79c3f9 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 }
 
-.inner-wrapper {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="password"],
-.form-group input[type="tel" i],
-.form-group button {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.image-wrapper img {
-    width: 130px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="password"],
-.form-group input[type="tel" i] {
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-    width: 378px;
-    border: 1px solid #a7a7a7;
-    border-radius: 3px;
-}
-
-.form-group button {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    padding: 10px;
-    background: #4e82dd;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-}
-
-.content-wrapper p a {
-    color: #4e82dd;
-    text-decoration: none;
-}
-
 .section.section-two p {
     color: #fff;
     text-align: center;
@@ -115,6 +68,47 @@ body {
     height: 295px;
 }
 
+.inner-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.form-group input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 378px;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+}
+
+.form-group button {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+    background: #4e82dd;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+}
+
+.image-wrapper img {
+    width: 130px;
+}
+
+.content-wrapper p a {
+    color: #4e82dd;
+    text-decoration: none;
+}
+
 .inner-wrapper.form-register .form-group button {
     text-transform: capitalize;
     font-size: 15px;
@@ -124,10 +118,14 @@ body {
     display: none;
 }
 
-@media(max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .container {
         display: flex;
         flex-direction: column;
+    }
+
+    .container:after {
+        z-index: -1;
     }
 
     .section.section-one {
@@ -146,13 +144,7 @@ body {
         width: 75%;
     }
 
-    .form-group input[type="text"],
-    .form-group input[type="password"],
-    .form-group input[type="tel" i] {
+    .form-group input {
         width: 96%;
-    }
-
-    .container:after {
-        z-index: -1;
     }
 }
